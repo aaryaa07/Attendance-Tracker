@@ -1,16 +1,12 @@
 from selenium import webdriver
 import time
 import requests
-
-
 import sys
 from PIL import Image
-
 
 # input of user details
 reg_no = input("Enter your SLCM username:{}".format("  "))
 passwd = input("Enter your SLCM Password:{}".format("  "))
-
 
 # Fetching captcha
 options = webdriver.ChromeOptions()
