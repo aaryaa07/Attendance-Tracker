@@ -1,11 +1,11 @@
 from selenium import webdriver
 import time
 import requests
-import bs4
-import urllib.request
+
+
 import sys
 from PIL import Image
-import pandas as pd
+
 
 # input of user details
 reg_no = input("Enter your SLCM username:{}".format("  "))
