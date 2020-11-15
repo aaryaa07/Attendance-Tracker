@@ -15,4 +15,6 @@ A Python script which fetches your attendance details from [SLCM](https://slcm.m
 - Run the script
 ` python3 app.py`
 
+The script will take your login details and also the captcha fill required, to fetch your attendance.
+
 
