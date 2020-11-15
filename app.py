@@ -11,7 +11,8 @@ passwd = input("Enter your SLCM Password:{}".format("  "))
 # Fetching captcha
 options = webdriver.ChromeOptions()
 options.headless = True
-browser = webdriver.Chrome("/home/aryaman/Downloads/chromedriver", options=options)
+# /home/aryaman/Downloads/chromedriver
+browser = webdriver.Chrome( options=options)
 browser.get('https://slcm.manipal.edu/')
 captcha = browser.find_element_by_id('imgCaptcha')
 captcha.screenshot('captcha.png')
@@ -29,9 +30,10 @@ try:
     browser.find_element_by_id('txtpassword').send_keys(passwd)
     browser.find_element_by_id('txtCaptcha').send_keys(captcha_txt)
     browser.find_element_by_id('btnLogin').click()
+ 
 
     time.sleep(2)
-
+    
     # getting attendance-info
     browser.get("https://slcm.manipal.edu/Academics.aspx")
 
