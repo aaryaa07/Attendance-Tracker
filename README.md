@@ -7,4 +7,12 @@ A Python script which fetches your attendance details from [SLCM](https://slcm.m
 
 # Instructions
 - Clone and navigate to repository directory:
-` git clone 
+
+`git clone https://github.com/aaryaa07/Attendance-Tracker.git`
+
+`cd Attendance-Tracker`
+
+- Run the script
+` python3 app.py`
+
+
