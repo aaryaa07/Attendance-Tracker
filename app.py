@@ -7,6 +7,7 @@ from PIL import Image
 # input of user details
 reg_no = input("Enter your SLCM username:{}".format("  "))
 passwd = input("Enter your SLCM Password:{}".format("  "))
+print("\nfetching captcha please wait...")
 
 # Fetching captcha
 options = webdriver.ChromeOptions()
@@ -22,6 +23,7 @@ img.show()
 
 # User inputs the capcha
 captcha_txt = input('Enter text shown in image\n')
+print("\n\nthis might take a few moments.")
 img.close()
 
 # automating filling of login form
